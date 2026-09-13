@@ -102,6 +102,9 @@
       font-size: 0.85rem;
       color: var(--muted);
     }
+    .footer-nav {
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -167,7 +170,10 @@
       <li><span data-i18n="contactBefore">Questions? Reach out at</span> <a href="mailto:contact@beats-link-creators.com">contact@beats-link-creators.com</a><span data-i18n="contactAfter">.</span></li>
     </ul>
 
-    <div class="footer" data-i18n="footer">&copy; 2026 Still Here. All rights reserved.</div>
+    <div class="footer">
+      <div data-i18n="footer">&copy; 2026 Still Here. All rights reserved.</div>
+      <div class="footer-nav"><a href="terms.html" data-i18n="termsLink">Terms of Service</a></div>
+    </div>
   </div>
 
 <script>
@@ -204,6 +210,7 @@ const I18N = {
   contactBefore: "Questions? Reach out at ",
   contactAfter: ".",
   footer: "© 2026 Still Here. All rights reserved.",
+  termsLink: "Terms of Service",
   langLabel: "Language"
 },
 'zh': {
@@ -235,6 +242,7 @@ const I18N = {
   contactBefore: "有问题？联系 ",
   contactAfter: "。",
   footer: "© 2026 Still Here. 保留所有权利。",
+  termsLink: "服务条款",
   langLabel: "语言"
 },
 'ja': {
@@ -266,6 +274,7 @@ const I18N = {
   contactBefore: "ご不明な点は ",
   contactAfter: " まで。",
   footer: "© 2026 Still Here. すべての権利を留保します。",
+  termsLink: "利用規約",
   langLabel: "言語"
 },
 'ko': {
@@ -297,6 +306,7 @@ const I18N = {
   contactBefore: "궁금한 점이 있다면 ",
   contactAfter: "로 연락해주세요.",
   footer: "© 2026 Still Here. 모든 권리 보유.",
+  termsLink: "서비스 약관",
   langLabel: "언어"
 }
 };
