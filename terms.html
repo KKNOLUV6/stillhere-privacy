@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">Still Here — Terms of Service</title>
+  <style>
+    :root {
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+      --accent: #e5484d;
+      --bg: #ffffff;
+      --line: #ececec;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+    .langbar {
+      text-align: right;
+      margin-bottom: 24px;
+    }
+    .langbar label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-right: 6px;
+    }
+    .langbar select {
+      font-size: 0.9rem;
+      padding: 6px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+    }
+    .brand {
+      font-family: "Satisfy", "Snell Roundhand", cursive;
+      font-size: 2.4rem;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+    .lede {
+      font-size: 1.02rem;
+      margin-bottom: 32px;
+      color: var(--text);
+    }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 650;
+      margin: 28px 0 8px;
+      letter-spacing: -0.01em;
+    }
+    p.body {
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="langbar">
+      <label for="langSelect" data-i18n="langLabel">Language</label>
+      <select id="langSelect"></select>
+    </div>
+
+    <div class="brand">Still Here</div>
+    <h1 data-i18n="title">Terms of Service</h1>
+    <p class="updated" data-i18n="updated">Last updated: September 13, 2026</p>
+
+    <p class="lede" data-i18n="intro">By downloading or using Still Here (&ldquo;the app&rdquo;), you agree to these Terms of Service. If you do not agree, please do not use the app.</p>
+
+    <h2 data-i18n="useTitle">Use of the App</h2>
+    <p class="body" data-i18n="useBody">Still Here provides check-ins, journaling, and safety tools for personal use. It is designed to offer comfort and companionship, not to replace the people or services that keep you safe.</p>
+
+    <h2 data-i18n="emergencyTitle">Not a Substitute for Emergency Services</h2>
+    <p class="body" data-i18n="emergencyBody">Still Here is not a replacement for local emergency services. In a real emergency, always call your local emergency number (such as 911, 110, 112, or 999). The app&rsquo;s SOS and safety features are aids, and we cannot guarantee that a notification will reach someone in time or at all.</p>
+
+    <h2 data-i18n="adviceTitle">No Professional Advice</h2>
+    <p class="body" data-i18n="adviceBody">Still Here does not provide medical, mental health, legal, or other professional advice. If you are in crisis or need help, please reach out to a qualified professional or a trusted person.</p>
+
+    <h2 data-i18n="privacyTitle">Privacy</h2>
+    <p class="body" data-i18n="privacyBody">Your data stays on your device. Still Here has no ads, no tracking, and does not sell or share your data. For details, see our Privacy Policy.</p>
+
+    <h2 data-i18n="ipTitle">Intellectual Property</h2>
+    <p class="body" data-i18n="ipBody">All content and design in the app belong to Still Here or its licensors and are protected by law. You may not copy or redistribute the app or its content without permission.</p>
+
+    <h2 data-i18n="disclaimerTitle">Disclaimer of Warranties</h2>
+    <p class="body" data-i18n="disclaimerBody">The app is provided &ldquo;as is&rdquo; and &ldquo;as available,&rdquo; without warranties of any kind. We do not guarantee that the app will be error-free or always available.</p>
+
+    <h2 data-i18n="liabilityTitle">Limitation of Liability</h2>
+    <p class="body" data-i18n="liabilityBody">To the fullest extent permitted by law, Still Here is not liable for any damages arising from your use of the app, including any safety-related outcome.</p>
+
+    <h2 data-i18n="changesTitle">Changes to These Terms</h2>
+    <p class="body" data-i18n="changesBody">We may update these terms from time to time. Continued use after changes means you accept the updated terms.</p>
+
+    <h2 data-i18n="contactTitle">Contact</h2>
+    <p class="body"><span data-i18n="contactBefore">Questions? Reach out at</span> <a href="mailto:contact@beats-link-creators.com">contact@beats-link-creators.com</a><span data-i18n="contactAfter">.</span></p>
+
+    <div class="footer" data-i18n="footer">&copy; 2026 Still Here. All rights reserved.</div>
+  </div>
+
+<script>
+const LANG_ORDER = ['en', 'zh', 'ja', 'ko'];
+const LANG_NAMES = { 'en': 'English', 'zh': '中文', 'ja': '日本語', 'ko': '한국어' };
+
+const I18N = {
+'en': {
+  title: "Terms of Service",
+  updated: "Last updated: September 13, 2026",
+  intro: "By downloading or using Still Here (“the app”), you agree to these Terms of Service. If you do not agree, please do not use the app.",
+  useTitle: "Use of the App",
+  useBody: "Still Here provides check-ins, journaling, and safety tools for personal use. It is designed to offer comfort and companionship, not to replace the people or services that keep you safe.",
+  emergencyTitle: "Not a Substitute for Emergency Services",
+  emergencyBody: "Still Here is not a replacement for local emergency services. In a real emergency, always call your local emergency number (such as 911, 110, 112, or 999). The app's SOS and safety features are aids, and we cannot guarantee that a notification will reach someone in time or at all.",
+  adviceTitle: "No Professional Advice",
+  adviceBody: "Still Here does not provide medical, mental health, legal, or other professional advice. If you are in crisis or need help, please reach out to a qualified professional or a trusted person.",
+  privacyTitle: "Privacy",
+  privacyBody: "Your data stays on your device. Still Here has no ads, no tracking, and does not sell or share your data. For details, see our Privacy Policy.",
+  ipTitle: "Intellectual Property",
+  ipBody: "All content and design in the app belong to Still Here or its licensors and are protected by law. You may not copy or redistribute the app or its content without permission.",
+  disclaimerTitle: "Disclaimer of Warranties",
+  disclaimerBody: "The app is provided “as is” and “as available,” without warranties of any kind. We do not guarantee that the app will be error-free or always available.",
+  liabilityTitle: "Limitation of Liability",
+  liabilityBody: "To the fullest extent permitted by law, Still Here is not liable for any damages arising from your use of the app, including any safety-related outcome.",
+  changesTitle: "Changes to These Terms",
+  changesBody: "We may update these terms from time to time. Continued use after changes means you accept the updated terms.",
+  contactTitle: "Contact",
+  contactBefore: "Questions? Reach out at ",
+  contactAfter: ".",
+  footer: "© 2026 Still Here. All rights reserved.",
+  langLabel: "Language"
+},
+'zh': {
+  title: "服务条款",
+  updated: "最后更新：2026 年 9 月 13 日",
+  intro: "下载或使用 Still Here（以下简称「本应用」），即表示你同意本服务条款。如不同意，请勿使用本应用。",
+  useTitle: "应用的使用",
+  useBody: "Still Here 提供签到、日记和安全工具，仅供个人使用。它的目的是带给你陪伴和安心，而非取代守护你的人或服务。",
+  emergencyTitle: "不能替代紧急服务",
+  emergencyBody: "Still Here 不能替代当地紧急服务。遇到真正的紧急情况，请始终拨打当地报警电话（如 911、110、112 或 999）。应用内的 SOS 和安全功能只是辅助，我们无法保证通知一定能及时或成功送达他人。",
+  adviceTitle: "非专业建议",
+  adviceBody: "Still Here 不提供医疗、心理健康、法律或其他专业建议。如果你处于危机之中或需要帮助，请向合格的专业人士或你信任的人求助。",
+  privacyTitle: "隐私",
+  privacyBody: "你的数据只保存在你的设备上。Still Here 没有广告、没有追踪，也不出售或共享你的数据。详见我们的隐私政策。",
+  ipTitle: "知识产权",
+  ipBody: "应用中的全部内容和设计均属于 Still Here 或其许可方，受法律保护。未经许可，你不得复制或传播本应用及其内容。",
+  disclaimerTitle: "免责声明",
+  disclaimerBody: "本应用按「现状」及「可用」提供，不附带任何形式的担保。我们不保证应用不会出错或始终可用。",
+  liabilityTitle: "责任限制",
+  liabilityBody: "在法律允许的最大范围内，Still Here 不对因你使用本应用而产生的任何损害（包括任何与安全相关的结果）承担责任。",
+  changesTitle: "本条款的变更",
+  changesBody: "我们可能不时更新本条款。变更后继续使用即表示你接受更新后的条款。",
+  contactTitle: "联系我们",
+  contactBefore: "有问题？联系 ",
+  contactAfter: "。",
+  footer: "© 2026 Still Here. 保留所有权利。",
+  langLabel: "语言"
+},
+'ja': {
+  title: "利用規約",
+  updated: "最終更新日：2026年9月13日",
+  intro: "Still Here（以下「本アプリ」）をダウンロードまたは使用することにより、お客様は本利用規約に同意したものとみなされます。同意いただけない場合は、本アプリを使用しないでください。",
+  useTitle: "アプリの利用",
+  useBody: "Still Here は、チェックイン・日記・安全ツールを個人利用のために提供します。その目的は、寄り添いと安心を届けることであり、あなたを守る人やサービスに取って代わるものではありません。",
+  emergencyTitle: "緊急サービスの代わりにはなりません",
+  emergencyBody: "Still Here は現地の緊急サービスの代わりにはなりません。本当の緊急時には、必ず現地の緊急電話番号（911・110・112・999 など）におかけください。アプリ内の SOS や安全機能は補助であり、通知が必ず間に合うこと、または確実に届くことを保証するものではありません。",
+  adviceTitle: "専門的助言ではないこと",
+  adviceBody: "Still Here は、医療・メンタルヘルス・法律その他の専門的な助言を提供するものではありません。危機的な状況にある場合や助けが必要な場合は、資格のある専門家または信頼できる人にご相談ください。",
+  privacyTitle: "プライバシー",
+  privacyBody: "あなたのデータは端末内にのみ保存されます。Still Here には広告もトラッキングもなく、データを販売・共有することもありません。詳しくはプライバシーポリシーをご覧ください。",
+  ipTitle: "知的財産",
+  ipBody: "アプリ内のすべてのコンテンツとデザインは Still Here またはそのライセンサーに帰属し、法律によって保護されています。許可なく本アプリやその内容を複製・配布することはできません。",
+  disclaimerTitle: "保証の否認",
+  disclaimerBody: "本アプリは「現状のまま」および「提供可能な範囲で」提供され、いかなる保証も伴いません。本アプリがエラーなく動作すること、または常に利用可能であることは保証しません。",
+  liabilityTitle: "責任の制限",
+  liabilityBody: "法律で認められる最大限の範囲において、Still Here は本アプリの使用に起因するあらゆる損害（安全に関連する結果を含む）について責任を負いません。",
+  changesTitle: "本規約の変更",
+  changesBody: "当社は本利用規約を随時更新することがあります。変更後に継続して使用した場合、更新後の規約に同意したものとみなされます。",
+  contactTitle: "お問い合わせ",
+  contactBefore: "ご不明な点は ",
+  contactAfter: " まで。",
+  footer: "© 2026 Still Here. すべての権利を留保します。",
+  langLabel: "言語"
+},
+'ko': {
+  title: "서비스 약관",
+  updated: "최종 업데이트: 2026년 9월 13일",
+  intro: "Still Here(이하 '본 앱')을 다운로드하거나 사용함으로써 귀하는 본 서비스 약관에 동의하게 됩니다. 동의하지 않는 경우 본 앱을 사용하지 마십시오.",
+  useTitle: "앱 사용",
+  useBody: "Still Here는 체크인, 일기, 안전 도구를 개인적인 용도로 제공합니다. 그 목적은 다정함과 안심을 전하는 것이며, 당신을 지키는 사람이나 서비스를 대신하지 않습니다.",
+  emergencyTitle: "긴급 서비스를 대신하지 않습니다",
+  emergencyBody: "Still Here는 현지 긴급 서비스를 대신하지 않습니다. 실제 긴급 상황에서는 반드시 현지 긴급번호(911, 110, 112, 999 등)로 전화하세요. 앱의 SOS 및 안전 기능은 보조 수단이며, 알림이 제때 또는 확실하게 전달된다고 보장할 수 없습니다.",
+  adviceTitle: "전문 조언이 아님",
+  adviceBody: "Still Here는 의료, 정신 건강, 법률 또는 기타 전문 조언을 제공하지 않습니다. 위기 상황에 있거나 도움이 필요하면 자격을 갖춘 전문가나 신뢰할 수 있는 사람에게 도움을 구하세요.",
+  privacyTitle: "개인정보",
+  privacyBody: "당신의 데이터는 기기에만 저장됩니다. Still Here에는 광고도 추적도 없으며, 데이터를 팔거나 공유하지 않습니다. 자세한 내용은 개인정보 처리방침을 참조하세요.",
+  ipTitle: "지식 재산권",
+  ipBody: "앱의 모든 콘텐츠와 디자인은 Still Here 또는 그 라이선스 제공자에게 귀속되며 법률에 따라 보호됩니다. 허가 없이 본 앱이나 그 내용을 복제하거나 배포할 수 없습니다.",
+  disclaimerTitle: "보증의 부인",
+  disclaimerBody: "본 앱은 '있는 그대로' 그리고 '이용 가능한 대로' 제공되며, 어떠한 종류의 보증도 하지 않습니다. 앱이 오류 없이 동작하거나 항상 이용 가능하다고 보증하지 않습니다.",
+  liabilityTitle: "책임의 제한",
+  liabilityBody: "법이 허용하는 최대 범위 내에서 Still Here는 앱 사용으로 인해 발생하는 모든 손해(안전 관련 결과 포함)에 대해 책임을 지지 않습니다.",
+  changesTitle: "본 약관의 변경",
+  changesBody: "당사는 본 약관을 수시로 업데이트할 수 있습니다. 변경 후 계속 사용하면 업데이트된 약관에 동의한 것으로 간주됩니다.",
+  contactTitle: "문의",
+  contactBefore: "궁금한 점이 있다면 ",
+  contactAfter: "로 연락해주세요.",
+  footer: "© 2026 Still Here. 모든 권리 보유.",
+  langLabel: "언어"
+}
+};
+
+function detectLang() {
+  var l = (navigator.language || 'en').toLowerCase();
+  if (l.indexOf('zh') === 0) return 'zh';
+  if (l.indexOf('ja') === 0) return 'ja';
+  if (l.indexOf('ko') === 0) return 'ko';
+  return 'en';
+}
+
+function applyLang(lang) {
+  if (!I18N[lang]) lang = 'en';
+  document.documentElement.lang = lang;
+  var dict = I18N[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var k = el.getAttribute('data-i18n');
+    if (dict[k] !== undefined) el.textContent = dict[k];
+  });
+  var sel = document.getElementById('langSelect');
+  if (sel) sel.value = lang;
+  try { localStorage.setItem('stillhere-lang', lang); } catch (e) {}
+}
+
+function buildSwitcher() {
+  var sel = document.getElementById('langSelect');
+  LANG_ORDER.forEach(function(code) {
+    var o = document.createElement('option');
+    o.value = code;
+    o.textContent = LANG_NAMES[code];
+    sel.appendChild(o);
+  });
+  sel.addEventListener('change', function() { applyLang(sel.value); });
+}
+
+var saved = null;
+try { saved = localStorage.getItem('stillhere-lang'); } catch (e) {}
+buildSwitcher();
+applyLang(saved || detectLang());
+</script>
+</body>
+</html>
